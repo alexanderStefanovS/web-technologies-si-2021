@@ -190,8 +190,6 @@ header.appendChild(p);
 
 const article = document.getElementById('article-1');
 
-article.innerHTML = '<h4>Hello JS</h4>';
-
 // console.log(document.getElementsByTagName('p'));
 
 const studentInput = document.getElementById('student');
