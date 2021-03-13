@@ -29,9 +29,9 @@ var str1 = '123';
 var num = 123;
 
 if (str1 === num) {
-    console.log('equal');
+    // console.log('equal');
 } else {
-    console.log('not equal');
+    // console.log('not equal');
 }
 
 var isEqual = str1 === num ? 'yes' : 'no';
@@ -42,23 +42,23 @@ var isEqual = str1 === num ? 'yes' : 'no';
 
 // iterating through object properties
 for (var key in obj) {
-    console.log(key + ' - ' + obj[key]);
+    // console.log(key + ' - ' + obj[key]);
 }
 
 // iteratig through array elements 
 for (var item of arr) {
-    console.log(item);
+    // console.log(item);
 }
 
 
 // standart for and while loops
 for (var i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+    // console.log(arr[i]);
 }
 
 var j = 0;
 while (j < arr.length) {
-    console.log(arr[j]);
+    // console.log(arr[j]);
     j++;
 }
 
@@ -71,7 +71,7 @@ while (j < arr.length) {
 log('message 1');
 
 function log(msg) {
-    console.log(msg);
+    // console.log(msg);
 }
 
 log('message');
@@ -87,7 +87,7 @@ log(sum(1, 5));
 // func('message 2')
 
 var func = function(arg) {
-    console.log(arg);
+    // console.log(arg);
 }
 
 func('some string');
@@ -97,7 +97,7 @@ func('some string');
 function func1(arg1) {
 
     function func2(arg2) {
-        console.log(arg2);
+        // console.log(arg2);
     }
 
     func2(arg1);
@@ -179,7 +179,7 @@ const newArray = myNumbers.map(el => el * 10);
 
 // selection of html element by id
 const header = document.getElementById('js-1');
-console.log(header);
+// console.log(header);
 
 // create html element and add inner text to it
 const p = document.createElement('p');
@@ -196,6 +196,7 @@ article.innerHTML = '<h4>Hello JS</h4>';
 
 const studentInput = document.getElementById('student');
 const btn = document.getElementById('btn');
+console.log(btn);
 
 // handle button 'click' event
 btn.addEventListener('click', (event) => {
