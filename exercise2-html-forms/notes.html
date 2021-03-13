@@ -74,25 +74,6 @@
       </article>
     </section>
   </section>
-  <script>
-
-    const notesForm = document.getElementById('notes-form');
-    const form = document.querySelector('form');
-    console.log(form);
-
-    notesForm.addEventListener('submit', (event) => {
-      const formElements = document.querySelectorAll('#notes-form > input, textarea, datetime-local, select');
-
-      const formValue = {};
-      formElements.forEach(el => {
-        formValue[el.name] = el.value;
-      });
-
-      event.preventDefault();
-    });
-
-
-  </script>
 </body>
 
 </html>
