@@ -1,4 +1,6 @@
 
+//#region async examples with setTimeout 
+
 // console.log('start');
 
 // setTimeout(() => {
@@ -24,10 +26,18 @@
 //         console.log('5 seconds later...');
 //     });
 
+//#endregion
+
+//#region ajax call example
+
 fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response) => {
         return response.json();
     })
     .then((data) => {
        console.log(data); 
-    })
+    });
+
+//#endregion
+
+

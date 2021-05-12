@@ -1,0 +1,19 @@
+
+.my-btn {
+
+    height: 50px;
+    width: 100px;
+
+    background-color: blue;
+    color: red;
+
+}
+
+.my-btn:hover {
+
+    background-color: red;
+    color: blue;
+
+    transition: 0.5s;
+
+}

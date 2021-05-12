@@ -18,7 +18,6 @@ if (!isset($_SESSION["user"])) {
     exit(json_encode(["status" => "ERROR", "message" => "Потребителят не е оторизиран"]));
 }
 
-
 if ($_POST) {
 
     $note = $_POST;
@@ -52,7 +51,5 @@ if ($_POST) {
     }
 
 }
-
-
 
 ?>
