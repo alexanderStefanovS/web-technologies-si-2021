@@ -9,7 +9,7 @@ if (isset($_FILES['csv']['name'])) {
 
     $location = './uploaded-files/' . $fileName;
 
-    // error hendling when working with files!
+    // error handling when working with files!
 
     // move_uploaded_file($fileTmpName, $location);
 
