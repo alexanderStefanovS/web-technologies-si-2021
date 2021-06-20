@@ -2,19 +2,21 @@
 
     require_once("../functions/login-func.php");
 
-    if ($_POST && isset($_POST["email"]) && isset($_POST["password"])) {
+    $post = json_decode(file_get_contents("php://input"), true);
+
+    if ($post && isset($post["email"]) && isset($post["password"])) {
 
         try {
 
-            $user = login($_POST);
+            $user = login($post);
 
             if ($user) {
 
                 session_start();
                 $_SESSION["user"] = $user;
 
-                setcookie("email", $_POST["email"], time() + 600);
-                setcookie("password", $_POST["password"], time() + 600);
+                setcookie("email", $post["email"], time() + 600);
+                setcookie("password", $post["password"], time() + 600);
 
                 echo json_encode(["status" => "SUCCES", "message" => "Входът е успешен!"]); 
 
